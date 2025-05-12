@@ -30,7 +30,9 @@
     "@zquare/hooks": "workspace:*",
     "@zquare/theme": "workspace:*",
     "@zquare/utils": "workspace:*",
-    "@zquare/play": "workspace:*"
+    "@zquare/play": "workspace:*",
+    "zquare": "workspace:*"
+
 
   }
 }

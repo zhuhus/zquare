@@ -15,6 +15,11 @@
     "@vitejs/plugin-vue": "^5.2.3",
     "vite": "^4.2.0",
     "typescript": "^5.8.3",
-    "vue-tsc": "^2.2.10"
+    "vue-tsc": "^2.2.10",
+    "@zquare/components": "workspace:*",
+    "@zquare/hooks": "workspace:*",
+    "@zquare/theme": "workspace:*",
+    "@zquare/utils": "workspace:*"
+
   }
 }

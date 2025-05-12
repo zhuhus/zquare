@@ -1,9 +1,8 @@
 {
-  "name": "@zquare/core",
+  "name": "zquare",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
-  "type":"index.d.ts",
     "exports": {
     ".": {
       "import": "./index.ts",

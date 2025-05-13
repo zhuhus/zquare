@@ -94,6 +94,9 @@ importers:
       '@zquare/components':
         specifier: workspace:*
         version: link:../components
+      '@zquare/theme':
+        specifier: workspace:*
+        version: link:../theme
 
   packages/docs:
     devDependencies:

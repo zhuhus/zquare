@@ -16,6 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zquare/components":"workspace:*"
+    "@zquare/components":"workspace:*",
+    "@zquare/theme":"workspace:*"
+
   }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "pnpm --filter @zquare/play dev",
     "docs:dev": "pnpm --filter @zquare/docs dev",
-    "docs:build": "pnpm --filter @zquare/docs dev",
+    "docs:build": "pnpm --filter @zquare/docs build",
     "test": "echo 'todo'"
   },
   "keywords": [],

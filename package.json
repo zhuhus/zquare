@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-       "dev": "pnpm --filter @zquare/play dev",
-       "docs:dev":"pnpm --filter @zquare/docs dev",
-       "docs:build":"pnpm --filter @zquare/docs dev",
-       "test":"echo 'todo'"
-
+    "dev": "pnpm --filter @zquare/play dev",
+    "docs:dev": "pnpm --filter @zquare/docs dev",
+    "docs:build": "pnpm --filter @zquare/docs dev",
+    "test": "echo 'todo'"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +16,7 @@
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.15.17",
     "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/tsconfig": "^0.7.0",
     "postcss-color-mix": "^1.1.0",
     "postcss-each": "^1.1.0",
     "postcss-each-variables": "^0.3.0",
@@ -28,15 +28,13 @@
     "vue-tsc": "^2.2.8"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21",
-    "vue": "^3.5.13",
     "@zquare/components": "workspace:*",
     "@zquare/hooks": "workspace:*",
+    "@zquare/play": "workspace:*",
     "@zquare/theme": "workspace:*",
     "@zquare/utils": "workspace:*",
-    "@zquare/play": "workspace:*",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.5.13",
     "zquare": "workspace:*"
-
-
   }
 }

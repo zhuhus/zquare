@@ -8,7 +8,7 @@ export function makeInstaller(component:Plugin[]){//批量安装组件
     return installer as Plugin
 }
 
-export const withInstaller = <T>(component:T) => {//单独安装组件
+export const withInstall = <T>(component:T) => {//单独安装组件
     (component as SFCWithInstall<T>).install =(app:App) => {
         const name =(component as any).name
         app.component(name,component as Plugin)

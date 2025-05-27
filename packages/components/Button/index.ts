@@ -1,5 +1,10 @@
 import Button from './Button.vue'
+import ButtonGroup from './ButtonGroup.vue'
 
-import {withInstaller} from '@zquare/utils'
 
-export const ZButton = withInstaller(Button)
+import {withInstall} from '@zquare/utils'
+
+export const ZButton = withInstall(Button)
+export const ZButtonGroup = withInstall(ButtonGroup);
+
+export * from "./types";

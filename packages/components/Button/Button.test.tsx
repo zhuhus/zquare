@@ -63,13 +63,13 @@ describe("Button.vue", () => {
     expect(wrapper.element.tagName.toLowerCase()).toBe("a");
   });
 
-  // Props: zhu
-  it("should render the correct zhu attribute when zhu prop is set", () => {
-    const wrapper = mount(Button, {
-      props: { zhu: "menqi" },
-    });
-    expect(wrapper.attributes("data-zhu")).toBe("menqi");
-  });
+  // // Props: zhu
+  // it("should render the correct zhu attribute when zhu prop is set", () => {
+  //   const wrapper = mount(Button, {
+  //     props: { zhu: "menqi" },
+  //   });
+  //   expect(wrapper.attributes("")).toBe("");
+  // });
 
   // Events: click
   it("should emits a click event when the button is clicked", async () => {

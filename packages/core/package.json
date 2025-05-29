@@ -1,6 +1,6 @@
 {
   "name": "zquare",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "components library by vue3+ts",
   "type": "module",
   "main": "./dist/umd/index.umd.cjs",
@@ -8,9 +8,9 @@
   "types": "./dist/types/core/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/core/index.d.ts",
       "import": "./dist/es/index.js",
-      "require": "./dist/umd/index.umd.cjs",
-      "types": "./dist/types/core/index.d.ts"
+      "require": "./dist/umd/index.umd.cjs"
     },
     "./dist/": {
       "import": "./dist/",
@@ -28,8 +28,8 @@
   ],
   "scripts": {
     "build": "run-p clean build-es build-umd",
-    "build-umd": "vite build --config vite.umd.config.ts",
-    "build-es": "vite build --config vite.es.config.ts",
+    "build-umd": "vite build --config build/vite.umd.config.ts",
+    "build-es": "vite build --config build/vite.es.config.ts",
     "clean": "rimraf dist",
     "release": "release-it"
   },
@@ -48,6 +48,9 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-visualizer": "^6.0.0",
+    "vite": "^6.3.5",
+    "vite-plugin-compression": "^0.5.1"
   }
 }

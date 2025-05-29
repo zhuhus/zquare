@@ -1,3 +1,16 @@
-import {ZButton, ZButtonGroup} from '@zquare/components'
+import {
+    ZButton,
+    ZButtonGroup,
+    ZCollapse,
+    ZCollapseItem,
+
+    ZIcon
+} from '@zquare/components'
 import type {Plugin} from 'vue'
-export default [ZButton,ZButtonGroup] as Plugin[]
+export default [
+    ZButton,
+    ZButtonGroup,
+    ZCollapse,
+    ZCollapseItem,
+    ZIcon
+] as Plugin[]

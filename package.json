@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.15.17",
+    "@types/shelljs": "^0.8.16",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
     "move-file-cli": "^3.0.0",
@@ -28,6 +29,8 @@
     "postcss-nested": "^7.0.2",
     "release-it": "^19.0.2",
     "rimraf": "^6.0.1",
+    "rollup-plugin-visualizer": "5.7.1",
+    "shelljs": "^0.10.0",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
     "vitest": "^3.1.3",

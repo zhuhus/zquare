@@ -1,0 +1,46 @@
+import { buildProps, definePropType } from '@zquare/utils'
+
+import type { Measurable } from './constants'
+import type Trigger from './trigger.vue'
+
+export const popperTriggerProps = buildProps({
+  /** @description Indicates the reference element to which the popper is attached */
+  virtualRef: {
+    type: definePropType<Measurable>(Object),
+  },
+  /** @description Indicates whether virtual triggering is enabled */
+  virtualTriggering: Boolean,
+  onMouseenter: {
+    type: definePropType<(e: Event) => void>(Function),
+  },
+  onMouseleave: {
+    type: definePropType<(e: Event) => void>(Function),
+  },
+  onClick: {
+    type: definePropType<(e: Event) => void>(Function),
+  },
+  onKeydown: {
+    type: definePropType<(e: Event) => void>(Function),
+  },
+  onFocus: {
+    type: definePropType<(e: Event) => void>(Function),
+  },
+  onBlur: {
+    type: definePropType<(e: Event) => void>(Function),
+  },
+  onContextmenu: {
+    type: definePropType<(e: Event) => void>(Function),
+  },
+  id: String,
+  open: Boolean,
+} as const)
+
+export type PopperTriggerProps = typeof popperTriggerProps
+
+export type PopperTriggerInstance = InstanceType<typeof Trigger> & unknown
+
+/** @deprecated use `popperTriggerProps` instead, and it will be deprecated in the next major version */
+export const usePopperTriggerProps = popperTriggerProps
+
+/** @deprecated use `PopperTriggerInstance` instead, and it will be deprecated in the next major version */
+export type ElPopperArrowTrigger = PopperTriggerInstance

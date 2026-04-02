@@ -1,12 +1,23 @@
 {
   "name": "@zquare/utils",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
- 
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "peerDependencies": {
+    "@vue/shared": "catalog:",
+    "vue": "catalog:"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+   "@zquare/constants": "workspace:^",
+    "@element-plus/icons-vue": "catalog:",
+    "@vueuse/core": "catalog:",
+    "lodash-unified": "catalog:"
+  },
+  "devDependencies": {
+    "@vue/shared": "catalog:",
+    "@vue/test-utils": "catalog:",
+    "expect-type": "^0.13.0",
+    "type-fest": "catalog:",
+    "vue": "catalog:"
+  }
 }

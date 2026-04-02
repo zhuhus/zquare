@@ -1,7 +1,9 @@
-import Icon from './Icon.vue'
+import { withInstall } from "@zquare/utils";
+import Icon from "./src/icon.vue";
 
-import {withInstall} from '@zquare/utils'
+import type { SFCWithInstall } from "@zquare/utils";
 
-export const ZIcon = withInstall(Icon)
-export * from "./types"
-
+export const ZIcon: SFCWithInstall<typeof Icon> = withInstall(Icon);
+export default ZIcon;
+export * from "./style";
+export * from "./src/icon";

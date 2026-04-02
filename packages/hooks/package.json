@@ -1,12 +1,24 @@
 {
   "name": "@zquare/hooks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.5",
+  "description": "Element Plus composables",
+  "license": "MIT",
+  "main": "index.ts",
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "vue": "catalog:"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@floating-ui/dom": "^1.0.1",
+    "@popperjs/core": "catalog:",
+    "@vueuse/core": "catalog:",
+    "lodash-unified": "catalog:"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "catalog:",
+    "vue": "catalog:"
+  }
 }
